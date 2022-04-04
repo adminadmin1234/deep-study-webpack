@@ -1,3 +1,5 @@
+### webpack基本原理
+通过编写简单的类webpack打包工具初步理解webpack的工作方式
 ### 安装依赖
 `npm install`
 ### 运行

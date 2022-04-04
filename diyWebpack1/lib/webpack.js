@@ -70,7 +70,6 @@ module.exports = class webpack {
     // 生成代码内容 webpack启动函数
     const filePath = path.join(this.output.path, this.output.filename);
     const newCode = JSON.stringify(code);
-    console.log('code66666668888',newCode)
     const bundle = `(function(graph){
         function require(module){
             function PathRequire(relativePath){
