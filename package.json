@@ -1,0 +1,21 @@
+{
+  "name": "simple-webpack",
+  "version": "1.0.0",
+  "description": "根目录：`node bundle.js` 会在dist下生成打包后的文件",
+  "main": "bundle.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/parser": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/traverse": "^7.17.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
