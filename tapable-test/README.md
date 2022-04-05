@@ -1,6 +1,8 @@
 ### 前言
 Webpack 本质上是一种事件流的机制，它的工作流程就是将各个插件串联起来，而实现这一切的核心就是 Tapable，Webpack 中最核心的负责编译的 Compiler 和负责创建 bundles 的 Compilation 都是 Tapable 的子类，并且实例内部的生命周期也是通过 Tapable 库提供的钩子类实现的
-`
+
+
+```
 // webpack5.71.0源码下
 // webpack/lib/Compiler.js
 const {
@@ -20,7 +22,7 @@ const {
 	AsyncSeriesBailHook,
 	AsyncParallelHook
 } = require("tapable");
-`
+```
 
 ### Tapable 是什么？
 #### 简介
