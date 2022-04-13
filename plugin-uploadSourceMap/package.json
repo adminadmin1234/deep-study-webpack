@@ -1,0 +1,26 @@
+{
+  "name": "plugin-uploadsourcemap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --env mode=production",
+    "dev": "webpack serve --config webpack.config.serve.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.20.0",
+    "form-data": "^4.0.0",
+    "glob": "^7.2.0",
+    "multiparty": "^4.2.3",
+    "source-map": "^0.7.3",
+    "webpack": "^5.72.0",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
+}
