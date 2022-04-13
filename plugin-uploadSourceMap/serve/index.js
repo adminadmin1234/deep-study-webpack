@@ -61,9 +61,10 @@ app.post("/uploadFile",  function (req, res) {
         }
         console.log('准备写入到新目录下')
         // 写入到新目录下
-        let newFile = `${dirNameNew}\\${fields.fileName[0]}`;
-        var data = fs.copyFileSync(dirNameOld, newFile);
-        console.log('data',data)
+        // let newFile = `${dirNameNew}\\${fields.fileName[0]}`;
+        let newFile = path.resolve(dirNameNew, fields.fileName[0]);
+        console.log('上传成功！newFile',newFile);
+        fs.copyFileSync(dirNameOld, newFile);
         // 并且删除原文件
         fs.unlinkSync(dirNameOld);
         console.log('上传成功！');
